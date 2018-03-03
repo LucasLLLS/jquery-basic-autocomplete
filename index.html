@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<link rel="stylesheet" href="autocomplete/dist/autocomplete.css">
+<body>
+
+	<div class="autocomplete-wrapper">
+		<input type="text" class="text">	
+	</div>
+
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+	<script src="autocomplete/dist/autocomplete.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			document.querySelector('.text').addEventListener('keyup', function(){
+				$('.text').autocomplete([
+									{name : 'opa e ae'},
+									{name : 'opa e ae 2'},
+									{name : 'opa e ae 3'},]
+				);
+			});
+
+
+		});
+	</script>
+
+</body>
+</html>
